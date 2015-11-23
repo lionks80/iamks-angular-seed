@@ -1,0 +1,54 @@
+<style>
+	.form-signin {
+		max-width: 330px;
+		padding: 15px;
+		margin: 0 auto;
+	}
+	.form-signin .form-signin-heading, .form-signin .checkbox {
+		margin-bottom: 10px;
+	}
+	.form-signin .checkbox {
+		font-weight: normal;
+	}
+	.form-signin .form-control {
+		position: relative;
+		height: auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 10px;
+		font-size: 16px;
+	}
+	.form-signin .form-control:focus {
+		z-index: 2;
+	}
+	.form-signin #username {
+		margin-bottom: -1px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.form-signin input[type="password"] {
+		margin-bottom: 10px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.form-group {
+		margin: 1px;
+	}
+</style>
+
+<form class="form-signin" name="form1" role="form" ng-submit="form1.$valid && login()" novalidate="novalidate">
+	<h2 class="form-signin-heading">Please sign in</h2>
+	<div class="form-group" ng-class="{ 'has-error': (form1.$submitted || form1.username.$touched) && form1.username.$invalid }">
+		<label for="username" class="sr-only">Email address</label>
+		<input type="text" class="form-control" id="username" name="username" placeholder="User ID" autocapitalize="off" ng-model="user.username" required="required" autofocus>
+	</div>
+	<div class="form-group" ng-class="{ 'has-error': (form1.$submitted || form1.password.$touched) && form1.password.$invalid }">
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" class="form-control" id="password" name="password" placeholder="Password" ng-model="user.password" required="required">
+	</div>
+	<button class="btn btn-lg btn-primary btn-block" type="submit">
+		Sign in
+	</button>
+</form>

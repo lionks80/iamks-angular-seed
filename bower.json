@@ -1,0 +1,25 @@
+{
+  "name": "iamks-angular-seed",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.7",
+    "angular-cookies": "~1.4.7",
+    "angular-mocks": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "font-awesome": "~4.4.0",
+    "jquery": "1.11.3",
+    "bootstrap": "~3.3.5",
+    "html5-boilerplate": "~5.2.0"
+  }
+}
